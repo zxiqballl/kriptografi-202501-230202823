@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 1  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Topik: Sejarah Kriptografi & Prinsip CIA 
+Nama: Muhamad Iqbal Rasyad Izzaldin 
+NIM: 230202823
+Kelas: 5IKRA  
 
 ---
 
