@@ -13,8 +13,11 @@ Kelas: 5IKRA
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Kriptografi adalah ilmu yang mempelajari cara mengamankan pesan atau data agar tidak dapat dibaca oleh pihak yang tidak berwenang. Teknik ini melibatkan dua proses utama, yaitu enkripsi (penyandian pesan asli menjadi bentuk rahasia) dan dekripsi (mengembalikan pesan rahasia ke bentuk semula). Pada masa klasik, metode kriptografi seperti Caesar Cipher dan Substitution Cipher digunakan dengan menggeser huruf atau mengganti simbol tertentu agar pesan tidak mudah dimengerti oleh orang lain.
+
+Dalam kriptografi modern, algoritma yang digunakan jauh lebih kompleks dan berbasis perhitungan matematika, seperti RSA, AES, dan DES. Sistem ini memanfaatkan konsep modular aritmetika, bilangan prima besar, serta fungsi hash untuk menjaga keamanan data dalam komunikasi digital, seperti pada enkripsi email, transaksi online, dan autentikasi pengguna.
+
+Selain algoritma kriptografi, keamanan informasi juga didasari oleh prinsip CIA Triad, yaitu Confidentiality (kerahasiaan), Integrity (integritas), dan Availability (ketersediaan). Ketiga aspek ini memastikan bahwa data hanya dapat diakses oleh pihak yang berhak, tidak diubah tanpa izin, dan selalu tersedia bagi pengguna yang berwenang. Prinsip CIA menjadi dasar utama dalam membangun sistem keamanan informasi modern.
 
 ---
 
