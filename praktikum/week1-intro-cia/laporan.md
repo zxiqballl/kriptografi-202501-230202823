@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: 1  
-Topik: Sejarah Kriptografi & Prinsip CIA 
-Nama: Muhamad Iqbal Rasyad Izzaldin 
-NIM: 230202823
-Kelas: 5IKRA  
+    Minggu ke-: 1  
+    Topik: Sejarah Kriptografi & Prinsip CIA 
+    Nama: Muhamad Iqbal Rasyad Izzaldin 
+    NIM: 230202823
+    Kelas: 5IKRA  
 
 ---
 
@@ -111,10 +111,6 @@ Contoh format:
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
 
 Hasil eksekusi program Caesar Cipher:
 
@@ -126,10 +122,13 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+    1. Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie dan Martin Hellman.
+    2.  RSA (Rivest–Shamir–Adleman)
+        ECC (Elliptic Curve Cryptography)
+        Diffie–Hellman Key Exchange
+    3. Perbedaan utamanya terletak pada kompleksitas algoritma dan media penggunaannya:
+        Kriptografi klasik menggunakan operasi sederhana seperti substitusi dan transposisi huruf, dilakukan secara manual, dan kuncinya relatif mudah ditebak.
+        Kriptografi modern menggunakan rumus matematika kompleks dan komputer, melibatkan bilangan besar, fungsi hash, serta sistem kunci publik dan privat,               sehingga jauh lebih aman dan efisien untuk komunikasi digital.
 ---
 
 ## 8. Kesimpulan
