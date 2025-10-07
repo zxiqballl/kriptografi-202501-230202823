@@ -8,7 +8,34 @@ Kelas: 5IKRA
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Era Klasik
+
+Kriptografi klasik muncul jauh sebelum komputer ada. Tujuannya sederhana: menyembunyikan isi pesan agar hanya penerima yang tahu maknanya.
+Beberapa contoh terkenal:
+
+Caesar Cipher (Julius Caesar, Romawi Kuno): setiap huruf digeser beberapa posisi dalam alfabet (misalnya A→D jika geser 3).
+
+Substitution Cipher: mengganti setiap huruf dengan huruf lain atau simbol tertentu.
+
+Transposition Cipher: mengacak urutan huruf tanpa mengubah huruf itu sendiri.
+
+Kelemahan kriptografi klasik adalah mudah dipecahkan dengan analisis frekuensi huruf atau teknik brute force, karena hanya bergantung pada pola alfabet dan kunci yang pendek.
+
+2. Era Mekanis dan Elektromekanis
+
+Pada abad ke-20, terutama masa Perang Dunia II, kriptografi mulai menggunakan mesin untuk mengenkripsi pesan.
+Contoh paling terkenal adalah Mesin Enigma yang digunakan oleh Jerman. Mesin ini menggunakan roda berputar (rotor) untuk menghasilkan sandi kompleks yang berubah setiap kali tombol ditekan.
+Upaya memecahkan Enigma oleh Alan Turing dan timnya di Inggris menjadi tonggak lahirnya komputer modern dan kriptanalisis otomatis.
+
+3. Era Kriptografi Modern
+
+Setelah komputer berkembang pesat, kriptografi beralih dari metode manual menjadi algoritma matematis berbasis komputer.
+
+Tahun 1970-an: muncul Data Encryption Standard (DES), algoritma simetris pertama yang distandarkan.
+
+1977: diperkenalkan RSA (Rivest–Shamir–Adleman), sistem kriptografi kunci publik (asymmetric encryption) yang memungkinkan komunikasi aman tanpa berbagi kunci rahasia terlebih dahulu.
+
+Saat ini, digunakan algoritma seperti AES (Advanced Encryption Standard), ECC (Elliptic Curve Cryptography), dan SHA (Secure Hash Algorithm) untuk menjaga keamanan data digital di internet, e-banking, hingga sistem IoT.
 
 ---
 
@@ -39,15 +66,47 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+    # ==============================
+    # Program: Caesar Cipher
+    # Pembuat: Muhamad Iqbal Rasyad Izzaldin
+    # Deskripsi: Implementasi algoritma kriptografi klasik
+    # ==============================
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+    # Fungsi enkripsi
+    def encrypt(text, key):
+    result = ""
+    for char in text:
+        if char.isalpha():  # cek apakah karakter huruf
+            shift = 65 if char.isupper() else 97  # huruf besar atau kecil
+            result += chr((ord(char) - shift + key) % 26 + shift)
+        else:
+            result += char  # karakter non-huruf tidak diubah
+    return result
+
+    # Fungsi dekripsi
+    def decrypt(cipher, key):
+    result = ""
+    for char in cipher:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift - key) % 26 + shift)
+        else:
+            result += char
+    return result
+
+    # Program utama
+    print("=== Program Caesar Cipher ===")
+    plain_text = input("Masukkan teks: ")
+    key = int(input("Masukkan kunci (angka): "))
+
+    # Enkripsi
+    encrypted_text = encrypt(plain_text, key)
+    print(f"\nTeks terenkripsi : {encrypted_text}")
+
+    # Dekripsi
+    decrypted_text = decrypt(encrypted_text, key)
+    print(f"Teks terdekripsi : {decrypted_text}"
+    )
 
 ---
 
