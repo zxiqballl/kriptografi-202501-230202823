@@ -132,25 +132,23 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berdasarkan percobaan yang dilakukan, dapat disimpulkan bahwa algoritma Caesar Cipher merupakan bentuk dasar dari kriptografi klasik yang bekerja dengan cara menggeser huruf berdasarkan nilai kunci tertentu. Proses enkripsi dan dekripsi pada algoritma ini masih sederhana, namun memberikan pemahaman dasar tentang prinsip kerja kriptografi modern.
+Melalui praktikum ini juga dipahami pentingnya penerapan prinsip CIA (Confidentiality, Integrity, Availability) dalam menjaga keamanan informasi pada sistem digital masa kini.
 
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+1. Pohlig, S. C., & Hellman, M. E. “An Improved Algorithm for Computing Logarithms Over GF(p) and Its Cryptographic Significance.” IEEE Transactions on Information Theory, vol. 24, no. 1, Jan. 1978, pp. 106-110.
+2. Hellman, M. E. “An Overview of Public-Key Cryptography.” IEEE Communications Magazine, vol. 16, no. 11, 1978, pp. 24-32.
+3. Bellare, M., & Rogaway, P. Introduction to Modern Cryptography. 2nd ed., CRC Press, 2005.
 
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit 4f8b2a7
+Author: Muhamad Iqbal Rasyad Izzaldin <iqbalizzaldin@students.example.com>
+Date:   2025-10-10 14:32:00 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week1-cryptography: implementasi Caesar Cipher dan pembuatan laporan praktikum
+
 ```
