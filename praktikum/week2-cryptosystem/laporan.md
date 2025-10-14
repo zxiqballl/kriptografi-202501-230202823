@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
 Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Nama: Muhamad Iqbal Rasyad Izzaldin 
+NIM: 230202823  
+Kelas: 5IKRA 
 
 ---
 
