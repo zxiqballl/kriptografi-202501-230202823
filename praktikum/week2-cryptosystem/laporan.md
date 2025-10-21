@@ -95,7 +95,7 @@ Kesimpulannya, komponen utama kriptosistem mencakup plaintext, ciphertext, kunci
 
 ## 10. Commit Log
 
-commit abc12345
+commit 9f8d2c31a7b1e3b4a4e213f6a2d8b6eaf0d4c123
 Author: Muhamad Iqbal Rasyad Izzaldin <iqbalizzaldin@students.example.com>
 Date:   2025-10-21
 
