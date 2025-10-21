@@ -76,23 +76,19 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Komponen utama dalam sebuah kriptosistem meliputi plaintext (data asli yang ingin diamankan), ciphertext (data terenkripsi yang tidak dapat dibaca tanpa kunci), kunci yang digunakan untuk enkripsi dan dekripsi (bisa berupa kunci simetris atau pasangan kunci asimetris publik dan privat), algoritma kriptografi (prosedur atau metode untuk mengubah plaintext menjadi ciphertext dan sebaliknya), serta proses enkripsi dan dekripsi itu sendiri yang mentransformasikan data dari bentuk asli ke bentuk terenkripsi dan kembali lagi.
+2. Kelebihan sistem simetris dibanding asimetris adalah kecepatan proses enkripsi dan dekripsi yang jauh lebih tinggi serta algoritmanya yang relatif sederhana, sehingga hemat sumber daya komputasi. Namun, kelemahan utama sistem simetris adalah masalah distribusi kunci karena kunci yang sama harus dijaga kerahasiaannya dan dibagi dengan pihak penerima secara aman sebelum komunikasi berlangsung. Jika kunci ini bocor, keamanan komunikasi akan langsung terancam. Sebaliknya, sistem asimetris lebih lambat dan kompleks, tetapi tidak memiliki masalah distribusi kunci yang sama karena menggunakan sepasang kunci publik dan privat yang berbeda.
+3. Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena kunci yang sama harus dikirim secara rahasia kepada penerima tanpa diketahui pihak ketiga. Jika kunci ini telah tersebar atau dicuri, maka pihak tidak berwenang dapat dengan mudah mendekripsi pesan, sehingga keamanan sistem terganggu. Oleh karena itu, metode pengiriman kunci yang aman sangat penting namun sering sulit diwujudkan terutama dalam jaringan yang tidak terpercaya.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
+- Kesimpulannya, komponen utama kriptosistem mencakup plaintext, ciphertext, kunci, algoritma, dan proses enkripsi-dekripsi. Sistem simetris unggul dalam kecepatan dan efisiensi, tapi menghadapi tantangan distribusi kunci yang aman, sedangkan sistem asimetris lebih aman dalam pengelolaan kunci tetapi lebih lambat dan kompleks. Distribusi kunci menjadi titik lemah kriptografi simetris yang perlu perhatian khusus untuk menjaga keamanan komunikasi.
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
+- Stinson, D. R. Cryptography: Theory and Practice. CRC Press, 2005.
+- Rivest, R., Shamir, A., & Adleman, L. (1978). “A Method for Obtaining Digital Signatures and Public-Key Cryptosystems.” Communications of the ACM, 21(2), 120-126.
+- https://www.its.ac.id/matematika/kriptografi-3/
 ---
 
 ## 10. Commit Log
