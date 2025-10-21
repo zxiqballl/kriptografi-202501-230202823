@@ -98,8 +98,8 @@ Kesimpulannya, komponen utama kriptosistem mencakup plaintext, ciphertext, kunci
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Muhamad Iqbal Rasyad Izzaldin <>
+Date:   2025-10-21
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
