@@ -94,12 +94,10 @@ Kesimpulannya, komponen utama kriptosistem mencakup plaintext, ciphertext, kunci
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
+
 commit abc12345
-Author: Muhamad Iqbal Rasyad Izzaldin <>
+Author: Muhamad Iqbal Rasyad Izzaldin <iqbalizzaldin@students.example.com>
 Date:   2025-10-21
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan 
 ```
