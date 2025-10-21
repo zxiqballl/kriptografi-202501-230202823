@@ -15,47 +15,57 @@ Kelas: 5IKRA
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Kriptosistem adalah suatu sistem yang terdiri dari beberapa komponen yang bekerja sama untuk mengamankan data melalui proses enkripsi dan dekripsi. Komponen utama dari kriptosistem meliputi plaintext (data asli yang akan dilindungi), algoritma enkripsi (proses matematika untuk mengubah plaintext menjadi ciphertext), ciphertext (data terenkripsi yang tidak dapat dibaca tanpa kunci), kunci enkripsi (yang dapat bersifat simetris atau asimetris), dan algoritma dekripsi (proses untuk mengubah ciphertext kembali menjadi plaintext asli). Proses enkripsi menjamin keamanan data selama transmisi atau penyimpanan sehingga hanya pihak yang memiliki kunci yang dapat mengakses informasi asli.​
+
+Enkripsi dan dekripsi adalah dua proses utama dalam kriptografi. Enkripsi adalah proses mengubah data asli menjadi format yang tidak dapat dibaca (ciphertext) menggunakan algoritma dan kunci tertentu. Sebaliknya, dekripsi adalah proses mengubah ciphertext kembali menjadi data asli menggunakan kunci yang sesuai. Ada dua jenis utama kriptosistem berdasarkan kunci yang digunakan: kriptosistem simetris yang menggunakan satu kunci yang sama untuk enkripsi dan dekripsi, serta kriptosistem asimetris yang menggunakan sepasang kunci berbeda (kunci publik untuk enkripsi dan kunci privat untuk dekripsi).
 
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
-
+- Python 3.x sebagai bahasa pemrograman utama.
+- Visual Studio Code atau editor kode lain untuk menulis program.
+- Git dan akun GitHub sebagai alat version control dan penyimpanan kode.
+- Library tambahan seperti pycryptodome﻿ untuk mendukung fungsi kriptografi bila diperlukan.
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat folder proyek di direktori praktikum/week2-cryptosystem/src/.
+2. Membuat file caesar_cipher.py di dalam folder tersebut.
+3. Menulis kode Python untuk algoritma Caesar Cipher sesuai panduan praktikum.
+4. Menjalankan kode dengan perintah python caesar_cipher.py di terminal/command prompt.
+5. Mengamati hasil output berupa teks terenkripsi dan terdekripsi yang muncul pada output program.
 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
 def encrypt(text, key):
-    return ...
-```
-)
+    result = ""
+    for char in text:
+        if char.isalpha():
+            shift = key % 26
+            if char.isupper():
+                result += chr((ord(char) - 65 + shift) % 26 + 65)
+            else:
+                result += chr((ord(char) - 97 + shift) % 26 + 97)
+        else:
+            result += char
+    return result
+
+def decrypt(ciphertext, key):
+    return encrypt(ciphertext, -key)
+
+- if __name__ == "__main__":
+    text = input("Masukkan plaintext: ")
+    key = int(input("Masukkan kunci (angka): "))
+    encrypted = encrypt(text, key)
+    print("Hasil Enkripsi:", encrypted)
+    decrypted = decrypt(encrypted, key)
+    print("Hasil Dekripsi:", decrypted)
+
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/output.png)
