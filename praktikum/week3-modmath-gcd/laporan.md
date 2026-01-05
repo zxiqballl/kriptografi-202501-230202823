@@ -102,8 +102,13 @@ Praktikum ini memberikan pemahaman tentang pentingnya aritmetika modular dan GCD
 ---
 
 ## 9. Daftar Pustaka
-Katz, J., & Lindell, Y. Introduction to Modern Cryptography.
-Stallings, W. Cryptography and Network Security.
+Katz, J., & Lindell, Y. (2020).
+Introduction to Modern Cryptography (3rd ed.).
+CRC Press.
+
+Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996).
+Handbook of Applied Cryptography.
+CRC Press.
 
 ---
 
