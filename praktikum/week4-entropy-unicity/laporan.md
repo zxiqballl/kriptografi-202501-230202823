@@ -154,8 +154,13 @@ Cipher modern seperti AES memiliki entropi tinggi sehingga aman terhadap brute f
 ---
 
 ## 9. Daftar Pustaka
-Stallings, W. Cryptography and Network Security, 2017, Bab 3.
-Katz, J., & Lindell, Y. Introduction to Modern Cryptography.
+Stallings, W. (2017).
+Cryptography and Network Security: Principles and Practice (7th ed.).
+Pearson Education.
+
+Katz, J., & Lindell, Y. (2020).
+Introduction to Modern Cryptography (3rd ed.).
+CRC Press.
 
 ---
 
