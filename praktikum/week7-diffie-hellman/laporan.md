@@ -1,50 +1,71 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 7  
+Topik: Diffie-Hellman Key Exchange  
+Nama: Muhamad Iqbal Rasyad Izzaldin
+NIM: 230202823 
+Kelas: 5IKRA 
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan dari praktikum ini adalah untuk memahami dan mengimplementasikan protokol Diffie-Hellman Key Exchange sebagai metode pertukaran kunci rahasia melalui saluran komunikasi publik. Selain itu, praktikum ini bertujuan untuk menganalisis kelemahan keamanan Diffie-Hellman, khususnya terhadap serangan Man-in-the-Middle (MITM).
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Diffie-Hellman Key Exchange merupakan salah satu protokol kriptografi kunci publik yang digunakan untuk menghasilkan kunci rahasia bersama antara dua pihak melalui saluran komunikasi yang tidak aman. Protokol ini diperkenalkan oleh Whitfield Diffie dan Martin Hellman pada tahun 1976 dan menjadi dasar bagi banyak sistem keamanan modern.
+
+Mekanisme Diffie-Hellman bergantung pada kesulitan masalah logaritma diskrit dalam aritmetika modular. Dua pihak menyepakati sebuah bilangan prima besar dan sebuah generator sebagai parameter publik. Meskipun parameter ini diketahui oleh pihak lain, nilai kunci rahasia tetap aman selama bilangan prima cukup besar.
+
+Namun, Diffie-Hellman murni tidak menyediakan mekanisme autentikasi. Akibatnya, protokol ini rentan terhadap serangan Man-in-the-Middle, di mana penyerang dapat menyamar sebagai pihak sah dan membentuk dua kunci rahasia berbeda dengan masing-masing korban.
 
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Python 3.11
+- Visual Studio Code
+- Git dan akun GitHub
+- Sistem operasi Windows / Linux
 
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+- Membuat struktur folder praktikum/week7-diffie-hellman/.
+- Membuat file diffie_hellman.py di dalam folder src/.
+- Menuliskan kode simulasi Diffie-Hellman sesuai panduan praktikum.
+- Menjalankan program menggunakan perintah:
+    python diffie_hellman.py
+- Mengamati hasil kunci rahasia yang dihasilkan Alice dan Bob.
+- Menambahkan simulasi serangan Man-in-the-Middle (MITM).
+- Mengambil screenshot hasil eksekusi program.
+- Melakukan commit ke repository Git dengan pesan week7-diffie-hellman.
 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+import random
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+# parameter publik
+p = 23
+g = 5
+
+# private key
+a = random.randint(1, p-1)  # Alice
+b = random.randint(1, p-1)  # Bob
+
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
+
+# shared secret
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
+
+print("Public Key Alice:", A)
+print("Public Key Bob  :", B)
+print("Kunci bersama Alice:", shared_secret_A)
+print("Kunci bersama Bob  :", shared_secret_B)
+
 
 ---
 
@@ -64,22 +85,25 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Diffie-Hellman memungkinkan pertukaran kunci di saluran publik karena keamanan protokol ini bergantung pada kesulitan masalah logaritma diskrit. Meskipun parameter publik diketahui, nilai kunci rahasia tidak dapat dihitung secara efisien oleh pihak lain.
+2. Kelemahan utama Diffie-Hellman murni adalah tidak adanya mekanisme autentikasi, sehingga protokol ini rentan terhadap serangan Man-in-the-Middle (MITM).
+3. Serangan MITM dapat dicegah dengan menambahkan mekanisme autentikasi, seperti sertifikat digital, tanda tangan digital, atau menggabungkan Diffie-Hellman dengan protokol TLS.
+
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Diffie-Hellman Key Exchange memungkinkan dua pihak untuk membentuk kunci rahasia bersama melalui saluran publik. Namun, tanpa autentikasi tambahan, protokol ini rentan terhadap serangan Man-in-the-Middle. Oleh karena itu, implementasi Diffie-Hellman harus dikombinasikan dengan mekanisme keamanan tambahan.
 
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+Diffie, W., & Hellman, M. (1976).
+New Directions in Cryptography.
+IEEE Transactions on Information Theory, 22(6), 644–654.
+
+Menezes, A. J., van Oorschot, P. C., & Vanstone, S. A. (1996).
+Handbook of Applied Cryptography.
+CRC Press.
 
 ---
 
@@ -88,8 +112,8 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Muhamad Iqbal Rasyad Izzaldin <zxiqbal28@gmail.com>
+Date:   2026-01-06
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+   week7-diffie-hellman
 ```
