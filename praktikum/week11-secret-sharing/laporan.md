@@ -8,7 +8,11 @@ Kelas: [Kelas]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan dari praktikum ini adalah:
+
+Memahami konsep dasar Shamir’s Secret Sharing (SSS).
+Melakukan simulasi pembagian sebuah rahasia ke beberapa bagian (shares) menggunakan skema SSS.
+Melakukan rekonstruksi rahasia menggunakan sejumlah minimal shares sesuai nilai threshold.
 
 ---
 
