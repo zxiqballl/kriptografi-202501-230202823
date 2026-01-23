@@ -8,30 +8,40 @@ Kelas: [Kelas]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan dari praktikum ini adalah untuk menganalisis penerapan kriptografi dalam komunikasi digital, khususnya penggunaan SSL/TLS pada email dan website e-commerce. Selain itu, praktikum ini bertujuan untuk memahami peran enkripsi dalam melindungi transaksi online serta mengevaluasi isu etika dan privasi yang muncul akibat penggunaan kriptografi dalam kehidupan sehari-hari.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+SSL (Secure Sockets Layer) dan TLS (Transport Layer Security) merupakan protokol keamanan yang digunakan untuk melindungi komunikasi data pada jaringan komputer. TLS adalah versi pengembangan dari SSL dan saat ini menjadi standar utama dalam pengamanan komunikasi web, email, dan aplikasi jaringan lainnya. TLS bekerja dengan mengombinasikan kriptografi kunci publik dan kunci simetris untuk menjamin kerahasiaan, integritas, dan autentikasi data.
+
+Dalam konteks web dan e-commerce, TLS diimplementasikan melalui HTTPS. HTTPS memastikan bahwa data sensitif seperti username, password, dan informasi pembayaran dienkripsi sebelum dikirimkan melalui jaringan. Sertifikat digital yang dikeluarkan oleh Certificate Authority (CA) digunakan untuk memverifikasi identitas server dan mencegah serangan seperti Man-in-the-Middle (MITM).
+
+Selain aspek teknis, penggunaan kriptografi juga menimbulkan isu etika dan privasi. Enkripsi melindungi komunikasi pribadi pengguna, namun di sisi lain dapat menyulitkan penegakan hukum dan pengawasan. Oleh karena itu, diperlukan keseimbangan antara keamanan, privasi, dan kepentingan hukum.
 
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Browser (Google Chrome / Mozilla Firefox)
+- Koneksi internet
+- Git dan akun GitHub
+- Sistem operasi Windows
+- Editor teks (Visual Studio Code)
 
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+- Membuat folder praktikum/week12-aplikasi-tls/ beserta subfolder screenshots/.
+- Mengakses website e-commerce menggunakan browser (contoh: Tokopedia dan Shopee).
+- Mengecek sertifikat digital dengan klik ikon gembok pada address bar browser.
+- Mencatat informasi sertifikat:
+- Certificate Authority (Issuer)
+- Masa berlaku sertifikat
+- Algoritma enkripsi
+- Membandingkan website HTTPS dan HTTP.
+- Menganalisis penerapan TLS pada transaksi login dan pembayaran.
+- Mendokumentasikan hasil pengamatan dalam laporan dan screenshot.
+- Melakukan commit Git dengan pesan week12-aplikasi-tls.
 
 ---
 
