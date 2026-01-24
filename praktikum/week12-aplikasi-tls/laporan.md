@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 12  
+Topik: Aplikasi TLS & E-commerce  
+Nama: Muhamad Iqbal Rasyad Izzaldin  
+NIM: 230202823  
+Kelas: 5IKRA  
 
 ---
 
@@ -46,15 +46,7 @@ Selain aspek teknis, penggunaan kriptografi juga menimbulkan isu etika dan priva
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+Pada praktikum ini tidak dilakukan pemrograman secara langsung, karena fokus utama adalah observasi dan analisis penerapan TLS/SSL pada layanan email dan e-commerce menggunakan browser.
 
 ---
 
@@ -74,22 +66,28 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Apa perbedaan utama antara HTTP dan HTTPS?
+
+HTTP mengirimkan data tanpa enkripsi sehingga rentan terhadap penyadapan. HTTPS menggunakan TLS untuk mengenkripsi data sehingga lebih aman dan terjamin kerahasiaannya.
+
+2. Mengapa sertifikat digital penting dalam komunikasi TLS?
+
+Sertifikat digital berfungsi untuk memverifikasi identitas server dan memastikan bahwa komunikasi dilakukan dengan pihak yang sah, sehingga mencegah pemalsuan identitas dan serangan MITM.
+
+3. Bagaimana kriptografi mendukung privasi sekaligus menimbulkan tantangan etika?
+
+Kriptografi melindungi privasi pengguna dengan mengenkripsi komunikasi. Namun, enkripsi juga dapat menghambat proses investigasi hukum, sehingga menimbulkan dilema antara perlindungan privasi dan kepentingan keamanan nasional.
+
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+TLS dan SSL memiliki peran penting dalam menjaga keamanan komunikasi digital, khususnya pada layanan email dan e-commerce. Penerapan enkripsi dan sertifikat digital terbukti mampu melindungi data sensitif pengguna. Namun, penggunaan kriptografi juga perlu diimbangi dengan kebijakan etika dan hukum yang jelas.
 
 ---
 
 ## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
+Kahn Academy. Transport Layer Security (TLS).
+Cloudflare Learning Center – What is TLS?
 
 ---
 
@@ -98,8 +96,8 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Muhamad Iqbal Rasyad Izzaldin <zxiqbal28@gmail.com>
+Date:   2026-01-24
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week12-aplikasi-tls
 ```
