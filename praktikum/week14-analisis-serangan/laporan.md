@@ -43,15 +43,13 @@ Serangan brute force dan dictionary attack merupakan contoh serangan kriptografi
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+import hashlib
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+password = "admin123"
+hash_md5 = hashlib.md5(password.encode()).hexdigest()
+
+print("Password:", password)
+print("Hash MD5:", hash_md5)
 
 ---
 
