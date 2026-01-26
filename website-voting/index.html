@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmankanVoting - Suara Demokrasi Aman</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h1><i class="fas fa-lock"></i> AmankanVoting</h1>
+        <p>Voting Aman Berbasis Blockchain</p>
+      </div>
+      <div class="header-chibi">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2licGt0d2dpd3ljMzdld216OTRmaHp2NDNnOHplaGlsNHE0enFpZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gXXFrjHFJIMoqKr8UT/giphy.gif" alt="Voting Character" class="chibi-animation">
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="config-section">
+          <h2>Konfigurasi Contract</h2>
+          <div class="config-input">
+            <input type="text" id="contractAddressInput" placeholder="Masukkan Contract Address (0x...)">
+            <button id="setContractBtn">Set Contract</button>
+          </div>
+          <p class="contract-status">Contract: <span id="currentContract">Belum diset</span> <button id="copyContractBtn" class="copy-btn" title="Copy"><i class="fas fa-copy"></i></button></p>
+          <button id="clearCacheBtn" class="clear-cache-btn"><i class="fas fa-trash"></i> Hapus Cache</button>
+        </div>
+
+        <div class="status-bar">
+          <p>Wallet: <span id="walletAddress">Belum terhubung</span></p>
+          <button id="connectBtn">Hubungkan Wallet</button>
+        </div>
+
+        <div class="voting-section">
+          <h2>Pilih Opsi</h2>
+          <div class="options">
+            <div class="option" data-choice="1">
+              <i class="fas fa-check-circle"></i>
+              <p>Setuju</p>
+            </div>
+            <div class="option" data-choice="2">
+              <i class="fas fa-times-circle"></i>
+              <p>Tolak</p>
+            </div>
+          </div>
+          <button id="voteBtn" class="vote-btn" disabled>Vote</button>
+          <div id="voteLoading" class="vote-loading hidden">
+            <div class="spinner"></div>
+            <span>Mengirim vote...</span>
+          </div>
+        </div>
+
+        <div class="results-section">
+          <div class="results-header">
+            <h2>Hasil Voting</h2>
+            <button id="refreshResultsBtn" class="refresh-btn" title="Refresh"><i class="fas fa-sync-alt"></i></button>
+          </div>
+          <div class="results">
+            <div class="result-item">
+              <span>Setuju:</span>
+              <div class="result-bar">
+                <div class="result-fill" id="result1Fill"></div>
+              </div>
+              <span id="result1" class="result-count">0</span>
+            </div>
+            <div class="result-item">
+              <span>Tolak:</span>
+              <div class="result-bar">
+                <div class="result-fill" id="result2Fill"></div>
+              </div>
+              <span id="result2" class="result-count">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="notification" class="notification hidden">
+          <p></p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
